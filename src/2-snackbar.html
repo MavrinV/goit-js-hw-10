@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=ё, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/2-snackbar.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <a class="back-link" href="./index.html">Go back</a>
+      <h1 class="main-title">
+        Snackbar
+      </h1>
+    </div>
+    <form class="form">
+      <label>
+        <p>Затримка (мс)</p>
+        <input class="input-snackbar" type="number" name="delay" required />
+      </label>
+  
+      <fieldset class="fieldset-snackbar">
+        <legend>
+          <h3>Стан</h3>
+        </legend>
+        <label class="label">
+          <input type="radio" name="state" value="fulfilled" required />
+          <p>Виконано</p>
+        </label>
+        <label class="label">
+          <input type="radio" name="state" value="rejected" required />
+          <p>Відхилено</p>
+        </label>
+      </fieldset>
+  
+      <button class="button-snackbar" type="submit">Створити повідомлення</button>
+    </form>
+  </main>
+
+  <script type="module" src="./js/2-snackbar.js"></script>
+
+</body>
+</html>
